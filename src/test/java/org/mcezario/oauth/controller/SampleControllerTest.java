@@ -74,7 +74,7 @@ public class SampleControllerTest {
     }
 
     @Test
-    void whenUnauthenticated_thenAccessIsDenied() throws Exception {
+    void shouldDeyAccessWhenUserIsUnauthenticated() throws Exception {
         mockMvc.perform(get("/api/user"))
                 .andExpect(status().isUnauthorized());
 
