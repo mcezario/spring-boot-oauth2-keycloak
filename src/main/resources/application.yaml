@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: oauth2
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${KEYCLOAK_HOST:http://localhost:8081}/auth/realms/spring-boot-app-realm
